@@ -60,7 +60,7 @@
                 <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Shubham Ojha</a><sup>2</sup> & </span>
                 <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Aditya Narendra</a><sup>3</sup></span>
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Aditya Narendra</a><sup>2</sup></span>
                   <span class="author-block">
                   </span>
                   </div>
@@ -120,7 +120,7 @@
 </section>
 
 <!-- TLDR/Contributions -->
-<section class="section is-white">
+<section class="section fullwidth-gray-bg">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -138,9 +138,8 @@
 <!-- End TLDR/Contributions -->
 
 <!-- TLDR/Contributions -->
-<section class="section is-grey">
+<section class="section is-white">
   <div class="container is-max-desktop">
-    
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -156,16 +155,15 @@
 <!-- End TLDR/Contributions -->
 
 <!-- TLDR/Contributions -->
-<section class="section is-grey">
+<section class="section fullwidth-gray-bg">
   <div class="container is-max-desktop">
-    
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Methodology</h2> 
         <img src="./static/images/Fig1.png"> 
         <div class="content has-text-justified">
          <br> <p>
-          Our approach uses a feature extractor (e.g., ViT, ResNet50) to generate \( D \)-dimensional feature vectors, which are segregated class-wise. For each class, we compute the probability distribution across feature dimensions, calculate the average probability mass for each data point, and categorize data into high-density and low-density cohorts. The model is trained using bias-agnostic (random sampling) and bias-mitigating (balanced signals) strategies, with performance evaluated on both cohorts using AUC.
+          Our approach uses DieT as a feature extractor to generate D-dimensional feature vectors, which are segregated class-wise. For each class, we compute the probability distribution across feature dimensions, calculate the average probability mass for each data point, and categorize data into high-density and low-density cohorts. Then, the model is trained using bias-agnostic and bias-mitigating approaches, with performance evaluated on both cohorts using AUC as the performance metric. While the bias-agnostic approach relies on random sampling, leading to a dominance of high-density features during training. Conversely, the <b>bias-aware approach ensures parity by oversampling low-density feature cohorts (vice-versa for high-density feature cohorts), allowing the model to receive a balanced signal</b> from both cohorts.
           </p>
         </div>
       </div>
@@ -185,7 +183,7 @@
         <img src="./static/images/Fig2.png"> 
         <div class="content has-text-justified">
          <br> <p>
-          Our results shows that the Bias-Agnostic approach yields an AUC difference of <mark>5.08%</mark> between the two cohorts whereas the Bias-Mitigating model obtains an AUC difference of 1.35%. This represents a <mark>73.42%</mark> reduction in the AUC difference compared to the Bias-Agnostic approach. Our results demonstrate that using an effective bias-mitigating approach reduces the skewness in the model performance across various feature cohorts.
+          Our results shows that the Bias-Agnostic approach yields an AUC difference of 5.08\% between the two cohorts whereas the Bias-Mitigating model obtains an AUC difference of 1.35%. This represents a 73.42% reduction in the AUC difference compared to the Bias-Agnostic approach. Our results demonstrate that using an effective bias-mitigating approach reduces the skewness in the model performance across various feature cohorts.
           </p>
         </div>
       </div>
@@ -203,10 +201,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow this website, we ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License
-
+             Website source code based on the <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfies</a> project. This website is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
           </p>
 
         </div>
